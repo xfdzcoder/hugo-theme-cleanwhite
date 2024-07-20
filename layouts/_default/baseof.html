@@ -4,7 +4,7 @@
 {{ partial "nav.html" . }}
 <!-- Page Header -->
 {{ block "header" .}}
-<header class="intro-header" style="background-image: url('{{ .Site.Params.header_image | relURL }}'); height: 100vh;">
+<header class="intro-header" style="background-image: url('{{ .Site.Params.header_image | relURL }}');">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -23,5 +23,13 @@
 {{ end }}
 
 {{ partial "footer.html" . }}
-</body>
+<script>
+  console.log(location.pathname)
+  console.log(location.href)
+  if (location.pathname === '/home/') {
+    document.querySelector('.intro-header').style.height = '100vh'
+  } else {
+    document.querySelector('.intro-header').style.height = '40vh'
+  }
+</script>
 </html>

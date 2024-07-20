@@ -19,7 +19,7 @@
                     {{$file :=  "/about/index-zh.md"}}
                     {{ $file | readFile | markdownify}}
                 </div>
-            
+
                 <!-- English Version -->
                 <div class="en post-container">
                     {{ .Content }}
@@ -27,11 +27,11 @@
             {{ else }}
                 {{ .Content }}
             {{ end }}
-             
+
             {{ partial "comments.html" . }}
-            
+
             </div>
-            
+
             {{ partial "sidebar.html" . }}
         </div>
     </div>
