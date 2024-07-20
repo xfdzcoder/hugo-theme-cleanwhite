@@ -8,11 +8,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-<!--                <div class="site-heading">-->
-<!--                    <h1>{{ .Site.Title}} </h1>-->
-<!--                    &lt;!&ndash;<hr class="small">&ndash;&gt;-->
-<!--		    <span class="subheading">{{ .Site.Params.slogan }}</span>-->
-<!--                </div>-->
+                <div class="site-heading" style="color: black">
+                    <h1>{{ .Site.Title}} </h1>
+                    <!--<hr class="small">-->
+		    <span class="subheading">{{ .Site.Params.slogan }}</span>
+                </div>
             </div>
         </div>
     </div>
@@ -28,8 +28,6 @@
   console.log(location.href)
   if (location.pathname === '/home/') {
     document.querySelector('.intro-header').style.height = '100vh'
-  } else {
-    document.querySelector('.intro-header').style.height = '40vh'
   }
 </script>
 </html>
