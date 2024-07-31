@@ -23,11 +23,4 @@
 {{ end }}
 
 {{ partial "footer.html" . }}
-<script>
-  console.log(location.pathname)
-  console.log(location.href)
-  if (location.pathname === '/home/') {
-    document.querySelector('.intro-header').style.height = '100vh'
-  }
-</script>
 </html>
